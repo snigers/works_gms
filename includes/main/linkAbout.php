@@ -1,0 +1,1 @@
+<a class="more-link" href="/about/"><span>About company</span></a>

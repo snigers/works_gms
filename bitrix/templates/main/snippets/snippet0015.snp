@@ -1,0 +1,51 @@
+    <table>
+        <tr>
+            <th>Service name</th>
+            <th>Price</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>
+                <p>Cross country moving</p>
+            </td>
+            <td>
+                <p><strong>$ 300</strong></p>
+            </td>
+            <td>
+                <p><strong>$ 300</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Cross country moving</p>
+            </td>
+            <td>
+                <p><strong>$ 300</strong></p>
+            </td>
+            <td>
+                <p><strong>$ 300</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Cross country moving</p>
+            </td>
+            <td>
+                <p><strong>$ 300</strong></p>
+            </td>
+            <td>
+                <p><strong>$ 300</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Cross country moving</p>
+            </td>
+            <td>
+                <p><strong>$ 300</strong></p>
+            </td>
+            <td>
+                <p><strong>$ 300</strong></p>
+            </td>
+        </tr>
+    </table>

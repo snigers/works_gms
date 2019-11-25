@@ -1,0 +1,15 @@
+    <div class="article-block">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="article-pic"><img src="/layout/files/article-pic-5.jpg"></div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="h5">Moving company</div>
+                <ul class="ul-alt">
+                    <li>Moving, packing,  storing is what we do, and our first priority is to satisfy  our customers.</li>
+                    <li>We are a full-service moving company: that means, once you hire us to move your belongings, you can rest at peace that everything will be handled safely, completely, and to your satisfaction.</li>
+                    <li>Hire our professional packers prior your move.</li>
+                </ul>
+            </div>
+        </div>
+    </div>

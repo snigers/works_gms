@@ -1,0 +1,1 @@
+<img src="/layout/files/google.png">

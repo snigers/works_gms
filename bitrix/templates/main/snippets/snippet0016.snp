@@ -1,0 +1,34 @@
+    <div class="docs-list">
+        <div class="row">
+            <div class="col-12 col-md-6"><a class="doc-tmb" href="#">
+                    <div class="doc-tmb-pic">
+                        <div class="doc-tmb-pic-inner">
+                            <div class="doc-tmb-ico"><img src="/layout/images/ico-pdf.png"></div>
+                            <div class="doc-tmb-format">PDF</div>
+                        </div>
+                    </div>
+                    <div class="doc-tmb-descr">
+                        <div class="doc-tmb-name">
+                            <p>Document name</p>
+                        </div>
+                        <div class="doc-tmb-dl">
+                            <div class="dl-link"><span>Download</span></div>
+                        </div>
+                    </div></a></div>
+            <div class="col-12 col-md-6"><a class="doc-tmb" href="#">
+                    <div class="doc-tmb-pic">
+                        <div class="doc-tmb-pic-inner">
+                            <div class="doc-tmb-ico"><img src="/layout/images/ico-pdf.png"></div>
+                            <div class="doc-tmb-format">DOC</div>
+                        </div>
+                    </div>
+                    <div class="doc-tmb-descr">
+                        <div class="doc-tmb-name">
+                            <p>Длинный заголовок документа для скачивания</p>
+                        </div>
+                        <div class="doc-tmb-dl">
+                            <div class="dl-link"><span>Download</span></div>
+                        </div>
+                    </div></a></div>
+        </div>
+    </div>
