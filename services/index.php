@@ -3,7 +3,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetPageProperty("TITLE", "Services");
 $APPLICATION->SetTitle("Services");
 ?>
-<!--test-->
+
 	<?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
 	"services", 
