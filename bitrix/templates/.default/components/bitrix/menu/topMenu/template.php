@@ -9,9 +9,9 @@ foreach($arResult as $arItem):
 		continue;
 ?>
 	<?if($arItem["SELECTED"]):?>
-		<li><a href="<?=$arItem["LINK"]?>" class="active"><?=$arItem["TEXT"]?></a></li>
+		<li><a class="link_geolocal" href="<?=$arItem["LINK"]?>" class="active"><?=$arItem["TEXT"]?></a></li>
 	<?else:?>
-		<li><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></li>
+		<li><a class="link_geolocal" href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></li>
 	<?endif?>
 	
 <?endforeach?>

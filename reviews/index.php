@@ -13,7 +13,7 @@ $APPLICATION->SetTitle("Reviews");
                   <div class="col-12 col-md-8">
 					  <?$APPLICATION->IncludeComponent(
 						  "bitrix:breadcrumb",
-						  "breadcrumb",
+						  "geo_breadcrumb",
 						  Array(
 							  "PATH" => "",
 							  "SITE_ID" => "s1",

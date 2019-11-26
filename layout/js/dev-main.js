@@ -129,4 +129,72 @@ $(document).ready(function () {
 	$(".tags-list > a").click(function(){
 		this.href = "/blog/?tags=" + this.innerText;
 	});
+
+	//==========================================================================
+	//geo location
+	$("body").on("click", ".btn-location-yes", function (e) {
+		e.preventDefault();
+		console.log('ok');
+		$.ajax({
+			method: "POST",
+			url: '/ajax/set_geo.php',
+			data: 'set_ok=Y',
+		})
+			.done(function(msg) {
+				//console.log(msg);
+			});
+
+	});
+
+	$("body").on("click", ".region-list-link", function (e) {
+		var city_id = $(this).data('city-id');
+		var city_url = $(this).data('city-href');
+		var city_name = $(this).text();
+
+		// Останавливаем переход по ссылке в случае если находимся на не изменяемой странице
+		if ($(this).attr("href") == "") {
+			e.preventDefault();
+		}
+		if(city_id) {
+			$.ajax({
+				method: "POST",
+				url: '/ajax/set_geo.php',
+				data: 'set_city='+city_id+'&set_city_url='+city_url,
+			})
+				.done(function(msg) {
+					if(msg=='Y'){
+						// В случае успешного выполнения запроса изменяем название локации на текущую
+						$(".city-name").html(city_name);
+						// Изменяем ссылку в логотипе на текущую локацию
+						$(".header-logo a").attr("href", "/"+city_url);
+
+						// Собираем ссылки из меню и изменяем для нужных страниц ссылки
+						var menulink = $('a.link_geolocal');
+						for (var i = 0; i < menulink.length; i++)
+						{
+							var link = menulink[i].pathname;
+							if (link.indexOf("services") > 0) {
+								menulink[i].href = "/" + city_url + "services/";
+							}
+							if (link.indexOf("rates") > 0) {
+								menulink[i].href = "/" + city_url + "rates/";
+							}
+							if (link.indexOf("contacts") > 0) {
+								menulink[i].href = "/" + city_url + "contacts/";
+							}
+						}
+
+						// Меняем ссылки для хлебных крошек
+						var breadckrums_link = $('a.breadcrumb_link');
+							breadckrums_link[0].href = "/" + city_url;
+
+						$(".location-popup").closest(".location-popup").fadeOut(250, function () {
+							$(".location-popup").closest(".location-popup").removeClass("active");
+						});
+
+					}
+				});
+		}
+
+	});
 });

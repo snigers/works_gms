@@ -16,7 +16,7 @@ $APPLICATION->SetTitle("Gentlemen's Moving Company");
                     <div class="page-header-descr">
 						<?$APPLICATION->IncludeComponent(
 							"bitrix:breadcrumb",
-							"breadcrumb",
+							"geo_breadcrumb",
 							Array(
 								"PATH" => "",
 								"SITE_ID" => "s1",

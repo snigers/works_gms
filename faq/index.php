@@ -11,7 +11,7 @@ $APPLICATION->SetTitle("FAQ");
               <div class="container">
 				  <?$APPLICATION->IncludeComponent(
 					  "bitrix:breadcrumb",
-					  "breadcrumb",
+					  "geo_breadcrumb",
 					  Array(
 						  "PATH" => "",
 						  "SITE_ID" => "s1",

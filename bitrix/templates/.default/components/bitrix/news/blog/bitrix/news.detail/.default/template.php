@@ -9,7 +9,7 @@
 				<div class="container">
 					<?$APPLICATION->IncludeComponent(
 						"bitrix:breadcrumb",
-						"breadcrumb",
+						"geo_breadcrumb_detail",
 						Array(
 							"PATH" => "",
 							"SITE_ID" => "s1",

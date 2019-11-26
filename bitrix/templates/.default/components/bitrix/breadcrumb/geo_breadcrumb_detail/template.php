@@ -19,7 +19,12 @@ foreach ($geo_location as $key => $arItem)
 		$res .= "/" . $arItem;
 	}
 	if ($key === $count) {
-		$arRes["MAIN"]["LINK"] = $res . "/";
+		if ($_SESSION["GEO_DATA"])
+		{
+			$arRes["MAIN"]["LINK"] = "/" . $_SESSION["GEO_DATA"]["URL_SECTION"];
+		} else {
+			$arRes["MAIN"]["LINK"] = $res . "/";
+		}
 		$arRes["MAIN"]["TITLE"] = htmlspecialcharsex($arResult[0]["TITLE"]);
 		$res .= "/" . $arItem . "/";
 		
@@ -91,7 +96,7 @@ foreach ($arRes as $arItem)
 	if ($arItem["LINK"] != "")
 	{
 		$strReturn .= '
-			<li><a href="'.$arItem["LINK"].'">'.$arItem["TITLE"].'</a></li>';
+			<li><a class="breadcrumb_link" href="'.$arItem["LINK"].'">'.$arItem["TITLE"].'</a></li>';
 	} else {
 		$strReturn .= '
 			<li>'.$arItem["TITLE"].'</li>';
