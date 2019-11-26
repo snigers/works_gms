@@ -155,6 +155,7 @@ $(document).ready(function () {
 		if ($(this).attr("href") == "") {
 			e.preventDefault();
 		}
+
 		if(city_id) {
 			$.ajax({
 				method: "POST",
