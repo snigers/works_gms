@@ -20,28 +20,32 @@ if (strlen($local_page) > 1)
 }
 
 
-$page = "";
-foreach ($local_page as $key => $arItem)
+if ($local_page[0] != "/")
 {
-    if ((($arItem == "services") || ($arItem == "rates") || ($arItem == "contacts") || ($arItem == "/")) && $key == (count($local_page) - 2))
-    {
-        $page = "/" . $arItem . "/";
-        break;
-    }
-	if ((($arItem == "services") || ($arItem == "rates") || ($arItem == "contacts") || ($arItem == "/")) && $key == (count($local_page) - 1))
-	{
-		$page = "/" . $arItem . "/";
-		break;
+	$page = "";
+	foreach ($local_page as $key => $arItem) {
+		if ((($arItem == "services") || ($arItem == "rates") || ($arItem == "contacts") || ($arItem == "/")) && $key == (count($local_page) - 2))
+		{
+			$page = "/" . $arItem . "/";
+			break;
+		}
+		if ((($arItem == "services") || ($arItem == "rates") || ($arItem == "contacts") || ($arItem == "/")) && $key == (count($local_page) - 1))
+		{
+			$page = "/" . $arItem . "/";
+			break;
+		}
+		if ((($arItem == "about") || ($arItem == "reviews") || ($arItem == "blog") || ($arItem == "faq") || ($arItem == "reservation")))
+		{
+			$page = "";
+			break;
+		}
+		if ((($arItem != "services") || ($arItem != "rates") || ($arItem != "contacts") || ($arItem != "about") || ($arItem != "reviews") || ($arItem != "blog") || ($arItem != "faq") || ($arItem != "reservation")))
+		{
+			$page = "/";
+		}
 	}
-	if ((($arItem == "about") || ($arItem == "reviews") || ($arItem == "blog") || ($arItem == "faq") || ($arItem == "reservation")))
-	{
-		$page = "";
-		break;
-	}
-	if ((($arItem != "services") || ($arItem != "rates") || ($arItem != "contacts") || ($arItem != "about") || ($arItem != "reviews") || ($arItem != "blog") || ($arItem != "faq") || ($arItem != "reservation")))
-    {
-		$page = "/";
-    }
+} else {
+	$page = "/";
 }
 
 ?>

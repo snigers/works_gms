@@ -2,7 +2,7 @@
 if(!defined("B_PROLOG_INCLUDED")  || B_PROLOG_INCLUDED!==true)die();
 
 $geo_session = $_SESSION["GEO_DATA"];
-
+//pr($arFields);
 $geo_local = $_SERVER['REQUEST_URI'];
 //pr($geo_session);
 //pr($geo_local);
@@ -18,13 +18,13 @@ foreach ($aMenuLinks  as $key => $arItem)
 {
 	switch ($arItem[1]) {
 		case "/services/":
-			$aMenuLinks[$key][1] = "/" . $_SESSION["GEO_DATA"]["URL_SECTION"] . $aMenuLinks[$key][1];
+			$aMenuLinks[$key][1] = "/" . $geo_session["URL_SECTION"] . $aMenuLinks[$key][1];
 			break;
 		case "/rates/":
-			$aMenuLinks[$key][1] = "/" . $_SESSION["GEO_DATA"]["URL_SECTION"] . $aMenuLinks[$key][1];
+			$aMenuLinks[$key][1] = "/" . $geo_session["URL_SECTION"] . $aMenuLinks[$key][1];
 			break;
 		case "/contacts/":
-			$aMenuLinks[$key][1] = "/" . $_SESSION["GEO_DATA"]["URL_SECTION"] . $aMenuLinks[$key][1];
+			$aMenuLinks[$key][1] = "/" . $geo_session["URL_SECTION"] . $aMenuLinks[$key][1];
 			break;
 	}
 }

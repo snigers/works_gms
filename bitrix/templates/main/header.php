@@ -51,13 +51,14 @@
                             "MENU_CACHE_TIME" => "3600",
                             "MENU_CACHE_USE_GROUPS" => "Y",
                             "MENU_CACHE_GET_VARS" => array(
+                                    "0" => $_SESSION["GEO_DATA"],
                             ),
                             "MAX_LEVEL" => "1",
                             "CHILD_MENU_TYPE" => "left",
                             "USE_EXT" => "Y",
                             "DELAY" => "N",
                             "ALLOW_MULTI_SELECT" => "N",
-                            "GEO_LOCATION" => $arResult
+							"GEO_LOC" => $_SESSION["GEO_DATA"]
                         ),
                         false
                     );?>
