@@ -51,7 +51,6 @@
                             "MENU_CACHE_TIME" => "3600",
                             "MENU_CACHE_USE_GROUPS" => "Y",
                             "MENU_CACHE_GET_VARS" => array(
-                                    "0" => $_SESSION["GEO_DATA"],
                             ),
                             "MAX_LEVEL" => "1",
                             "CHILD_MENU_TYPE" => "left",
@@ -123,31 +122,58 @@
 						  );?>
                           <div class="header-col-2">
                               <div class="row">
-								  <?$APPLICATION->IncludeComponent(
-									  "bitrix:catalog.section.list",
-									  "geo_local",
-									  Array(
-										  "ADD_SECTIONS_CHAIN" => "N",
-										  "CACHE_FILTER" => "N",
-										  "CACHE_GROUPS" => "N",
-										  "CACHE_TIME" => "36000000",
-										  "CACHE_TYPE" => "N",
-										  "COMPONENT_TEMPLATE" => ".default",
-										  "COUNT_ELEMENTS" => "Y",
-										  "FILTER_NAME" => "sectionsFilter",
-										  "IBLOCK_ID" => "1",
-										  "IBLOCK_TYPE" => "geolocation",
-										  "SECTION_CODE" => "",
-										  "SECTION_FIELDS" => array(0=>"",1=>"",),
-										  "SECTION_ID" => "",
-										  "SECTION_URL" => "",
-										  "SECTION_USER_FIELDS" => array(0=>"",1=>"",),
-										  "SHOW_PARENT_NAME" => "Y",
-										  "TOP_DEPTH" => "3",
-										  "VIEW_MODE" => "LIST",
-                                          "GEO_LOCATION" => $_SESSION["GEO_DATA"]
-									  )
-								  );?>
+
+                                  <div class="header-location">
+                                      <a class="btn-header-location" href="#" data-location-popup=".location-suggest-popup">
+                                          <span class="city-name">
+                                            <?if($_SESSION["GEO_DATA"]['FULL_NAME']):?>
+                                                <?echo $_SESSION["GEO_DATA"]['FULL_NAME'];?>
+                                            <?else:?>
+                                                Los Angeles
+                                            <?endif;?>
+                                          </span>
+                                      </a>
+                                      <div class="location-popup location-suggest-popup">
+                                          <div class="popup-dialog">
+                                              <div class="popup-content">
+                                                  <div class="close close-popup"></div>
+                                                  <div class="location-suggest-name">
+                                                      <span class="city-name">
+                                                        <?if($_SESSION["GEO_DATA"]['FULL_NAME']):?>
+                                                            <?echo $_SESSION["GEO_DATA"]['FULL_NAME'];?>
+                                                        <?else:?>
+                                                            Los Angeles
+                                                        <?endif;?>
+                                                      </span>
+                                                  </div>
+                                                  <div class="location-suggest-buttons">
+                                                      <div class="btn btn-1 btn-location-yes close-popup">Yes</div>
+                                                      <div class="btn btn-2 btn-location-choose" data-location-popup=".location-choice-popup">Regions choice</div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="location-popup location-choice-popup">
+                                          <div class="popup-dialog">
+                                              <div class="popup-content">
+                                                  <div class="close"></div>
+                                                  <div class="search-form geo-search-form">
+                                                      <form>
+                                                          <div class="form-group">
+                                                              <input type="text" name="geo_search" id="geo_search" placeholder="Search">
+                                                              <div class="btn-search">Search</div>
+                                                          </div>
+                                                          <div class="geo-suggest-popup">
+                                                              <div class="suggest-items-list-wrapper">
+                                                                  <div class="suggest-items-list"></div>
+                                                              </div>
+                                                          </div>
+                                                      </form>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
 	
 								  <?$APPLICATION->IncludeComponent(
 									  "bitrix:news.detail",

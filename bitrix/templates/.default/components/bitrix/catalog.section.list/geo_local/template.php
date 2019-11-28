@@ -47,16 +47,17 @@ if ($local_page[0] != "/")
 } else {
 	$page = "/";
 }
-
+//pr($arParams["GEO_LOCATION"]);
+//foreach ($_SESSION['GEO_DATA']["VARIABLES"] )
 ?>
 <!---->
 <div class="header-location">
     <a class="btn-header-location" href="#" data-location-popup=".location-suggest-popup">
-        <span class="city-name">
-            <?if($_SESSION['GEO_DATA']['NAME']):?>
-                <?echo $_SESSION['GEO_DATA']['NAME'];?>
+        <span class="city-name" data-url="<?=$arParams["GEO_LOCATION"]['URL_SECTION']?>">
+            <?if($arParams["GEO_LOCATION"]['NAME']):?>
+                <?echo $arParams["GEO_LOCATION"]['NAME'];?>
             <?else:?>
-                Washington
+                Los Angeles
             <?endif;?>
         </span>
     </a>
@@ -66,10 +67,10 @@ if ($local_page[0] != "/")
                 <div class="close close-popup"></div>
                 <div class="location-suggest-name">
                     <span class="city-name">
-                        <?if($_SESSION['GEO_DATA']['NAME']):?>
-                            <?echo $_SESSION['GEO_DATA']['NAME'];?>
+                        <?if($arParams["GEO_LOCATION"]['NAME']):?>
+                            <?echo $arParams["GEO_LOCATION"]['NAME'];?>
                         <?else:?>
-                            Washington
+                            Los Angeles
                         <?endif;?>
                     </span>
                 </div>

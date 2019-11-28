@@ -1,6 +1,14 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");?>
 <?
 
+$name = $_REQUEST['set_city'];
+if (strpos($name, ", ") > 0)
+{
+	$name = explode(", ", $name);
+	$name = $name[1];
+}
+
+
 if(($_REQUEST['set_ok']=='Y') && $_SESSION['GEO_DATA']['ID']){
 	$_SESSION['SET_GEO_DATA']='Y';
 	
@@ -12,25 +20,21 @@ if(($_REQUEST['set_ok']=='Y') && $_SESSION['GEO_DATA']['ID']){
 
 
 if($_REQUEST['set_city']){
-//	pr($_REQUEST['set_city']);
 	
 	CModule::IncludeModule("iblock");
-//	$el = new CIBlockElement;
-	$rsCity = CIBlockSection::GetList(Array(), Array("IBLOCK_ID"=>GEO_LOC_ID, "ID"=>$_REQUEST['set_city']), false, Array(), Array("ID", "IBLOCK_ID", "NAME", "CODE"));
+	$rsCity = CIBlockSection::GetList(Array(), Array("IBLOCK_ID"=>GEO_LOC_ID, "NAME"=>$name), false, Array(), Array("ID", "IBLOCK_ID", "NAME", "CODE"));
 	if($obEl = $rsCity->GetNextElement()){
 		
-//		pr($obEl);
 		$arCity = $obEl->GetFields();
-		//$arCity['PROPERTIES'] = $obEl->GetProperties();
 		$arCityIBlockData = array(
 			'NAME'=>$arCity['NAME'],
+			'FULL_NAME'=>$_REQUEST['set_city'],
 			'ID'=>$arCity['ID'],
 			'CODE'=>$arCity['CODE'],
 			'URL_SECTION'=> $_REQUEST['set_city_url'],
 		);
 	}
 	
-	//pr($arCityIBlockData);
 	if($arCityIBlockData){
 		$_SESSION['SET_GEO_DATA']='Y';
 		$_SESSION['GEO_DATA'] = $arCityIBlockData;

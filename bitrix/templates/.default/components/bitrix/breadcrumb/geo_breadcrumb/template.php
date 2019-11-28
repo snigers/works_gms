@@ -20,7 +20,7 @@ foreach ($geo_location as $key => $arItem)
 	if ($key === $count) {
 		if ($_SESSION["GEO_DATA"])
 		{
-			$arRes["MAIN"]["LINK"] = "/" . $_SESSION["GEO_DATA"]["URL_SECTION"];
+			$arRes["MAIN"]["LINK"] = $_SESSION["GEO_DATA"]["URL_SECTION"];
 		} else {
 			$arRes["MAIN"]["LINK"] = $res . "/";
 		}

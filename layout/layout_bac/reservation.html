@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gentelmen's Moving Company</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput-rtl.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="js/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <div class="up-link"></div>
+    <div class="over-wrapper">
+      <div id="mobile-indicator"></div>
+      <div id="sm-indicator"></div>
+      <header><a name="top"></a>
+        <div class="header-content">
+          <div class="header-content-inner">
+            <div class="header-top">
+              <div class="container">
+                <div class="navbar-trigger"><span></span><span></span><span></span></div>
+                <div class="navbar-wrapper">
+                  <div class="close"></div>
+                  <ul class="nav navbar-nav">
+                    <li><a href="#"><span>Services</span></a></li>
+                    <li><a href="#"><span>Rates</span></a></li>
+                    <li><a href="#"><span>About</span></a></li>
+                    <li><a href="#"><span>Reviews</span></a></li>
+                    <li><a href="#"><span>Blog</span></a></li>
+                    <li><a href="#"><span>FAQ</span></a></li>
+                    <li><a href="#"><span>Contacts</span></a></li>
+                    <li><a class="active" href="#"><span>Reservation</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="header-col-1">
+                    <div class="row">
+                      <div class="header-logo"><a href="/"><img src="images/logo-inner.png" alt="Gentlemen's Moving Company"></a></div>
+                      <div class="header-text">
+                        <p>fully licensed and insured company:<br>MTR0191476, US DOT 2399435</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-col-2">
+                    <div class="row">
+                      <div class="header-location"><a class="btn-header-location" href="#" data-location-popup=".location-suggest-popup"><span>California, Los Angeles</span></a>
+                        <div class="location-popup location-suggest-popup">
+                          <div class="popup-dialog">
+                            <div class="popup-content">
+                              <div class="close close-popup"></div>
+                              <div class="location-suggest-name"><span>California, Los Angeles</span></div>
+                              <div class="location-suggest-buttons">
+                                <div class="btn btn-1 btn-location-yes close-popup">Yes</div>
+                                <div class="btn btn-2 btn-location-choose" data-location-popup=".location-choice-popup">Regions choice</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="location-popup location-choice-popup">
+                          <div class="popup-dialog">
+                            <div class="popup-content">
+                              <div class="close"></div>
+                              <div class="search-form">
+                                <form>
+                                  <div class="form-group">
+                                    <input type="text" name="location_search" id="location_search" placeholder="Search" required>
+                                    <button class="btn-search" type="submit">Search</button>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="regions-choice-wrapper">
+                                <div class="row">
+                                  <div class="col-12">
+                                    <div class="h4">State</div>
+                                    <div class="regions-list-wrapper">
+                                      <ul class="regions-list">
+                                        <li><a href="#">Alabama</a></li>
+                                        <li><a href="#">Alaska</a></li>
+                                        <li><a href="#">Arizona</a></li>
+                                        <li><a href="#">Arkansas</a></li>
+                                        <li><a href="#">California</a></li>
+                                        <li><a href="#">Colorado</a></li>
+                                        <li><a href="#">Connecticut</a></li>
+                                        <li><a href="#">Delaware</a></li>
+                                        <li><a href="#">Florida</a></li>
+                                        <li><a href="#">Georgia</a></li>
+                                        <li><a href="#">Hawaii</a></li>
+                                        <li><a href="#">Idaho</a></li>
+                                        <li><a href="#">Illinois</a></li>
+                                        <li><a href="#">Indiana</a></li>
+                                        <li><a href="#">Iowa</a></li>
+                                        <li><a href="#">Kansas</a></li>
+                                        <li><a href="#">Kentucky</a></li>
+                                        <li><a href="#">Louisiana</a></li>
+                                        <li><a href="#">Maine</a></li>
+                                        <li><a href="#">Maryland</a></li>
+                                        <li><a href="#">Massachusetts</a></li>
+                                        <li><a href="#">Michigan</a></li>
+                                        <li><a href="#">Minnesota</a></li>
+                                        <li><a href="#">Mississippi</a></li>
+                                        <li><a href="#">Missouri</a></li>
+                                        <li><a href="#">Montana</a></li>
+                                        <li><a href="#">Nebraska</a></li>
+                                        <li><a href="#">Nevada</a></li>
+                                        <li><a href="#">New Hampshire</a></li>
+                                        <li><a href="#">New Jersey</a></li>
+                                        <li><a href="#">New Mexico</a></li>
+                                        <li><a href="#">New York</a></li>
+                                        <li><a href="#">North Carolina</a></li>
+                                        <li><a href="#">North Dakota</a></li>
+                                        <li><a href="#">Ohio</a></li>
+                                        <li><a href="#">Oklahoma</a></li>
+                                        <li><a href="#">Oregon</a></li>
+                                        <li><a href="#">Pennsylvania</a></li>
+                                        <li><a href="#">Rhode Island</a></li>
+                                        <li><a href="#">South Carolina</a></li>
+                                        <li><a href="#">South Dakota</a></li>
+                                        <li><a href="#">Tennessee</a></li>
+                                        <li><a href="#">Texas</a></li>
+                                        <li><a href="#">Utah</a></li>
+                                        <li><a href="#">Vermont</a></li>
+                                        <li><a href="#">Virginia</a></li>
+                                        <li><a href="#">Washington</a></li>
+                                        <li><a href="#">West Virginia</a></li>
+                                        <li><a href="#">Wisconsin</a></li>
+                                        <li><a href="#">Wyoming</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-12">
+                                    <div class="h4">Region</div>
+                                    <div class="regions-list-wrapper"></div>
+                                    <ul class="regions-list">
+                                      <li><a href="#">Alabama</a></li>
+                                      <li><a href="#">Alaska</a></li>
+                                      <li><a href="#">Arizona</a></li>
+                                      <li><a href="#">Arkansas</a></li>
+                                      <li><a href="#">California</a></li>
+                                      <li><a href="#">Colorado</a></li>
+                                      <li><a href="#">Connecticut</a></li>
+                                      <li><a href="#">Delaware</a></li>
+                                      <li><a href="#">Florida</a></li>
+                                      <li><a href="#">Georgia</a></li>
+                                      <li><a href="#">Hawaii</a></li>
+                                      <li><a href="#">Idaho</a></li>
+                                      <li><a href="#">Illinois</a></li>
+                                      <li><a href="#">Indiana</a></li>
+                                      <li><a href="#">Iowa</a></li>
+                                      <li><a href="#">Kansas</a></li>
+                                      <li><a href="#">Kentucky</a></li>
+                                      <li><a href="#">Louisiana</a></li>
+                                      <li><a href="#">Maine</a></li>
+                                      <li><a href="#">Maryland</a></li>
+                                      <li><a href="#">Massachusetts</a></li>
+                                      <li><a href="#">Michigan</a></li>
+                                      <li><a href="#">Minnesota</a></li>
+                                      <li><a href="#">Mississippi</a></li>
+                                      <li><a href="#">Missouri</a></li>
+                                      <li><a href="#">Montana</a></li>
+                                      <li><a href="#">Nebraska</a></li>
+                                      <li><a href="#">Nevada</a></li>
+                                      <li><a href="#">New Hampshire</a></li>
+                                      <li><a href="#">New Jersey</a></li>
+                                      <li><a href="#">New Mexico</a></li>
+                                      <li><a href="#">New York</a></li>
+                                      <li><a href="#">North Carolina</a></li>
+                                      <li><a href="#">North Dakota</a></li>
+                                      <li><a href="#">Ohio</a></li>
+                                      <li><a href="#">Oklahoma</a></li>
+                                      <li><a href="#">Oregon</a></li>
+                                      <li><a href="#">Pennsylvania</a></li>
+                                      <li><a href="#">Rhode Island</a></li>
+                                      <li><a href="#">South Carolina</a></li>
+                                      <li><a href="#">South Dakota</a></li>
+                                      <li><a href="#">Tennessee</a></li>
+                                      <li><a href="#">Texas</a></li>
+                                      <li><a href="#">Utah</a></li>
+                                      <li><a href="#">Vermont</a></li>
+                                      <li><a href="#">Virginia</a></li>
+                                      <li><a href="#">Washington</a></li>
+                                      <li><a href="#">West Virginia</a></li>
+                                      <li><a href="#">Wisconsin</a></li>
+                                      <li><a href="#">Wyoming</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="header-phone"><a class="btn-header-phone" href="tel:877-613-5576"><span>877-613-5576</span></a></div>
+                    </div>
+                  </div>
+                  <div class="header-col-3">
+                    <div class="header-button"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#quoteModal">Request a quote now</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-bottom-mob d-block d-md-none">
+              <div class="row">
+                <div class="col-6"><a class="btn btn-2" href="tel:877-613-5576">Call</a></div>
+                <div class="col-6"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#quoteModal">Get a quote</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <div class="page-wrapper">
+          <div class="page-header" style="background-image: url(files/header-bg-reservation.jpg);">
+            <div class="page-header-inner">
+              <div class="container">
+                <ul class="breadcrumb">
+                  <li><a href="#">Home</a></li>
+                  <li>Reservation</li>
+                </ul>
+                <h1>Reservation</h1>
+              </div>
+            </div>
+          </div>
+          <div class="page-body page-body-alt">
+            <div class="container">
+              <div class="page-content page-content-alt">
+                <div class="est-form reservation-form">
+                  <form>
+                    <div class="h4">Client info</div>
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label for="reservation_name">Name</label>
+                          <input type="text" name="reservation_name" id="reservation_name" placeholder="your name" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <div class="form-group">
+                          <label for="reservation_phone">Phone number</label>
+                          <input class="input-phone" type="text" name="reservation_phone" id="reservation_phone" placeholder="(000) 000-0000" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <div class="form-group">
+                          <label for="reservation_email">E-mail</label>
+                          <input type="email" name="reservation_email" id="reservation_email" placeholder="your mail" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="h4">Project info</div>
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label for="reservation_size">Size of&nbsp;project</label>
+                          <select name="reservation_size" id="reservation_size" title="Select" required>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                            <option value="6">Option 6</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <div class="form-group">
+                          <label for="reservation_date">Date of&nbsp;the&nbsp;move</label>
+                          <input class="input-date" type="text" name="reservation_date" id="reservation_date" placeholder="mm/dd/yy" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="sub-form">
+                          <div class="h4">Address from</div>
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label for="reservation_from_address">ZIP or address</label>
+                                <input type="text" name="reservation_from_address" id="reservation_from_address" placeholder="ZIP or address" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 col-lg-6">
+                              <div class="form-group">
+                                <label for="reservation_from_type">Type</label>
+                                <select name="reservation_from_type" id="reservation_from_type" title="Select" required>
+                                  <option value="1">Apartment (room)</option>
+                                  <option value="2">Option 2</option>
+                                  <option value="3">Option 3</option>
+                                  <option value="4">Option 4</option>
+                                  <option value="5">Option 5</option>
+                                  <option value="6">Option 6</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="form-group">
+                                <label for="reservation_from_add">Additional question</label>
+                                <select name="reservation_from_add" id="reservation_from_add" title="Select" required>
+                                  <option value="1">Apartment (room)</option>
+                                  <option value="2">Option 2</option>
+                                  <option value="3">Option 3</option>
+                                  <option value="4">Option 4</option>
+                                  <option value="5">Option 5</option>
+                                  <option value="6">Option 6</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="sub-form sub-form-second">
+                          <div class="h4">Address to</div>
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label for="reservation_to_address">ZIP or address</label>
+                                <input type="text" name="reservation_to_address" id="reservation_to_address" placeholder="ZIP or address" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 col-lg-6">
+                              <div class="form-group">
+                                <label for="reservation_to_type">Type</label>
+                                <select name="reservation_to_type" id="reservation_to_type" title="Select" required>
+                                  <option value="1">Apartment (room)</option>
+                                  <option value="2">Option 2</option>
+                                  <option value="3">Option 3</option>
+                                  <option value="4">Option 4</option>
+                                  <option value="5">Option 5</option>
+                                  <option value="6">Option 6</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="form-group">
+                                <label for="reservation_to_add">Additional question</label>
+                                <select name="reservation_to_add" id="reservation_to_add" title="Select" required>
+                                  <option value="1">Apartment (room)</option>
+                                  <option value="2">Option 2</option>
+                                  <option value="3">Option 3</option>
+                                  <option value="4">Option 4</option>
+                                  <option value="5">Option 5</option>
+                                  <option value="6">Option 6</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-section-group">
+                      <div class="form-section-alt">
+                        <div class="form-section-name">
+                          <div class="h5">Do you need help with packing boxes?</div>
+                        </div>
+                        <div class="form-section-field">
+                          <div class="form-radios-alt">
+                            <div class="form-radio">
+                              <input type="radio" name="reservation_packing" id="reservation_packing_1" checked>
+                              <label for="reservation_packing_1">No</label>
+                            </div>
+                            <div class="form-radio">
+                              <input type="radio" name="reservation_packing" id="reservation_packing_2">
+                              <label for="reservation_packing_2">1&nbsp;bedroom</label>
+                            </div>
+                            <div class="form-radio">
+                              <input type="radio" name="reservation_packing" id="reservation_packing_3">
+                              <label for="reservation_packing_3">2&nbsp;bedroom</label>
+                            </div>
+                            <div class="form-radio">
+                              <input type="radio" name="reservation_packing" id="reservation_packing_4">
+                              <label for="reservation_packing_4">3&nbsp;bedroom</label>
+                            </div>
+                            <div class="form-radio">
+                              <input type="radio" name="reservation_packing" id="reservation_packing_5">
+                              <label for="reservation_packing_5">More bedroom</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-section-alt">
+                        <div class="form-section-name">
+                          <div class="h5">Do you need storage?</div>
+                        </div>
+                        <div class="form-section-field">
+                          <div class="form-radios-alt">
+                            <div class="form-radio">
+                              <input type="radio" name="reservation_storage" id="reservation_storage_1" checked>
+                              <label for="reservation_storage_1">No</label>
+                            </div>
+                            <div class="form-radio">
+                              <input type="radio" name="reservation_storage" id="reservation_storage_2">
+                              <label for="reservation_storage_2">1-4 weeks</label>
+                            </div>
+                            <div class="form-radio">
+                              <input type="radio" name="reservation_storage" id="reservation_storage_3">
+                              <label for="reservation_storage_3">More than 1&nbsp;month</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-section-alt">
+                        <div class="form-section-name">
+                          <div class="h5">Do you need help with unwanted items &amp;&nbsp;junk removal?</div>
+                        </div>
+                        <div class="form-section-field">
+                          <div class="form-radios-alt">
+                            <div class="form-radio">
+                              <input type="radio" name="reservation_removal" id="reservation_removal_1" checked>
+                              <label for="reservation_removal_1">No</label>
+                            </div>
+                            <div class="form-radio">
+                              <input type="radio" name="reservation_removal" id="reservation_removal_2">
+                              <label for="reservation_removal_2">Yes</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-section-alt">
+                        <div class="form-section-name">
+                          <div class="h5">Does your move involve oversized or&nbsp;bulky items?</div>
+                          <p>Such as piano, pool table, gym equipment, commercial grade kitchen equipment, hot tub and etc.</p>
+                        </div>
+                        <div class="form-section-field">
+                          <div class="form-radios-alt">
+                            <div class="form-radio">
+                              <input type="radio" name="reservation_oversized" id="reservation_oversized_1" checked>
+                              <label for="reservation_oversized_1">No</label>
+                            </div>
+                            <div class="form-radio">
+                              <input type="radio" name="reservation_oversized" id="reservation_oversized_2">
+                              <label for="reservation_oversized_2">Yes</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-section-alt form-section-alt-alt">
+                        <div class="h5">How did you hear about our Company?</div>
+                        <div class="form-radios form-radios-inline">
+                          <div class="form-radio">
+                            <input type="radio" name="reservation_hear" id="reservation_hear_1" checked>
+                            <label for="reservation_hear_1">Google</label>
+                          </div>
+                          <div class="form-radio">
+                            <input type="radio" name="reservation_hear" id="reservation_hear_2">
+                            <label for="reservation_hear_2">Yelp</label>
+                          </div>
+                          <div class="form-radio">
+                            <input type="radio" name="reservation_hear" id="reservation_hear_3">
+                            <label for="reservation_hear_3">Friend recommended</label>
+                          </div>
+                          <div class="form-radio">
+                            <input type="radio" name="reservation_hear" id="reservation_hear_4">
+                            <label for="reservation_hear_4">Returned customer</label>
+                          </div>
+                          <div class="form-radio">
+                            <input type="radio" name="reservation_hear" id="reservation_hear_5">
+                            <label for="reservation_hear_5">Saw a&nbsp;truck</label>
+                          </div>
+                          <div class="form-radio">
+                            <input type="radio" name="reservation_hear" id="reservation_hear_6">
+                            <label for="reservation_hear_6">Outdoor advertising</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="reservation_message">Message</label>
+                          <textarea class="textarea-autogrow" name="reservation_message" id="reservation_message" placeholder="Your message" rows="1"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-footer">
+                      <div class="row">
+                        <div class="col-12 col-md-4">
+                          <button class="btn btn-2" type="submit">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                <div class="footer-logo"><img src="images/footer-logo.png"></div>
+                <div class="footer-text">
+                  <p>Our license number is<br>MTR0191103   US DOT 2399435</p>
+                </div>
+                <div class="footer-privacy"><a href="#">Privacy policy</a></div>
+              </div>
+              <div class="footer-col-2">
+                <div class="h3">Regions</div>
+                <ul class="footer-menu">
+                  <li><a href="#">California</a></li>
+                  <li><a href="#">Washington</a></li>
+                  <li><a href="#">Oregon</a></li>
+                </ul>
+              </div>
+              <div class="footer-col-3">
+                <div class="h3">Connect with us</div>
+                <div class="footer-soclinks"><a class="footer-soclink footer-soclink-fb" href="#"></a><a class="footer-soclink footer-soclink-instagram" href="#"></a></div>
+              </div>
+              <div class="footer-col-4">
+                <div class="h3">Share with us</div>
+                <div class="footer-share">
+                  <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                  <script src="https://yastatic.net/share2/share.js"></script>
+                  <div class="ya-share2" data-services="facebook,twitter"></div>
+                </div>
+              </div>
+              <div class="footer-col-5">
+                <div class="footer-copy">
+                  <p>Copyright &copy;<br>Gentlemen Moving Services INC.<br>GMS<sup class="reg">&reg;</sup></p>
+                </div>
+                <div class="footer-dev-wrapper"><a class="footer-dev" href="#" alt="Renaissance Art Group">Site development in <br><span>Renaissance Art Group</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade form-modal quote-modal" id="quoteModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <div class="h2">Request a Quote Now</div>
+            </div>
+            <div class="modal-body">
+              <div class="quote-form modal-form">
+                <form id="quoteModalForm">
+                  <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_from">From</label>
+                        <input type="text" name="quote_modal_from" id="quote_modal_from" placeholder="City or zip code" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_to">To</label>
+                        <input type="text" name="quote_modal_to" id="quote_modal_to" placeholder="City or zip code" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_size">Home size</label>
+                        <select name="quote_modal_size" id="quote_modal_size" title="--" required>
+                          <option value="1">Studio</option>
+                          <option value="2">1 bedroom</option>
+                          <option value="3">2 bedroom</option>
+                          <option value="4">3 bedroom</option>
+                          <option value="5">4 bedroom</option>
+                          <option value="6">Commercial</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_date">Date</label>
+                        <input class="input-date" type="text" name="quote_modal_date" id="quote_modal_date" placeholder="mm/dd/yy" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_name">Name</label>
+                        <input type="text" name="quote_modal_name" id="quote_modal_name" placeholder="your name" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_how">How did you hear about us</label>
+                        <select name="quote_modal_how" id="quote_modal_how" title="Select" required>
+                          <option value="1">friends said</option>
+                          <option value="2">found on the internet</option>
+                          <option value="3">saw an ad</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_phone">Phone number</label>
+                        <input class="input-phone" type="text" name="quote_modal_phone" id="quote_modal_phone" placeholder="(000) 000-0000" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_email">E-mail</label>
+                        <input type="email" name="quote_modal_email" id="quote_modal_email" placeholder="your mail" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="quote_modal_message">Message</label>
+                        <textarea class="textarea-autogrow" name="quote_modal_message" id="quote_modal_message" rows="1" placeholder="your message"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <button class="btn btn-2" type="submit">Get started</button>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="top-form-policy"><a href="#">Privacy Policy</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal callback-modal" id="callbackModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <div class="h2">Заказать звонок</div>
+            </div>
+            <div class="modal-body">
+              <p>Оставьте свои данные и&nbsp;наш специалист свяжется с&nbsp;вами в&nbsp;течение 15&nbsp;минут</p>
+              <div class="modal-form callback-form">
+                <form>
+                  <div class="form-group">
+                    <label class="placeholder" for="callback_name">Ваше имя</label>
+                    <input type="text" name="callback_name" id="callback_name" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="placeholder" for="callback_phone">+7 (___) ___-__-__</label>
+                    <input class="input-phone" type="text" name="callback_phone" id="callback_phone" required>
+                  </div>
+                  <div class="form-footer">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <button class="btn btn-2 btn-small" type="submit"><span>Отправить</span></button>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку «Отправить», Вы даете свое согласие с&nbsp;<a href="#">политикой конфиденциальности</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade client-modal" id="clientModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal success-modal" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <div class="h2"><span>Ваша заявка успешно принята!</span></div>
+            </div>
+            <div class="modal-body">
+              <div class="text">
+                <p>Перезвоним в течение 15 минут</p>
+              </div>
+              <div class="success-modal-button">
+                <button class="btn btn-1" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/additional-methods.min.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/wNumb.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/fancybox/jquery.fancybox.min.js"></script>
+      <script src="js/greensock/TweenMax.min.js"></script>
+      <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+      <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+      <script src="js/iscroll-probe.js"></script>
+      <script src="js/scrollmagic/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+      <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+      <script src="js/jquery.mousewheel.js"></script>
+      <script src="js/animations.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>

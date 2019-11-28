@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gentelmen's Moving Company</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput-rtl.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="js/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <div class="up-link"></div>
+    <div class="over-wrapper">
+      <div id="mobile-indicator"></div>
+      <div id="sm-indicator"></div>
+      <header><a name="top"></a>
+        <div class="header-content">
+          <div class="header-content-inner">
+            <div class="header-top">
+              <div class="container">
+                <div class="navbar-trigger"><span></span><span></span><span></span></div>
+                <div class="navbar-wrapper">
+                  <div class="close"></div>
+                  <ul class="nav navbar-nav">
+                    <li><a href="#"><span>Services</span></a></li>
+                    <li><a href="#"><span>Rates</span></a></li>
+                    <li><a href="#"><span>About</span></a></li>
+                    <li><a href="#"><span>Reviews</span></a></li>
+                    <li><a href="#"><span>Blog</span></a></li>
+                    <li><a href="#"><span>FAQ</span></a></li>
+                    <li><a href="#"><span>Contacts</span></a></li>
+                    <li><a class="active" href="#"><span>Reservation</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="header-col-1">
+                    <div class="row">
+                      <div class="header-logo"><a href="/"><img src="images/logo-inner.png" alt="Gentlemen's Moving Company"></a></div>
+                      <div class="header-text">
+                        <p>fully licensed and insured company:<br>MTR0191476, US DOT 2399435</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-col-2">
+                    <div class="row">
+                      <div class="header-location"><a class="btn-header-location" href="#" data-location-popup=".location-suggest-popup"><span>California, Los Angeles</span></a>
+                        <div class="location-popup location-suggest-popup">
+                          <div class="popup-dialog">
+                            <div class="popup-content">
+                              <div class="close close-popup"></div>
+                              <div class="location-suggest-name"><span>California, Los Angeles</span></div>
+                              <div class="location-suggest-buttons">
+                                <div class="btn btn-1 btn-location-yes close-popup">Yes</div>
+                                <div class="btn btn-2 btn-location-choose" data-location-popup=".location-choice-popup">Regions choice</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="location-popup location-choice-popup">
+                          <div class="popup-dialog">
+                            <div class="popup-content">
+                              <div class="close"></div>
+                              <div class="search-form">
+                                <form>
+                                  <div class="form-group">
+                                    <input type="text" name="location_search" id="location_search" placeholder="Search" required>
+                                    <button class="btn-search" type="submit">Search</button>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="regions-choice-wrapper">
+                                <div class="row">
+                                  <div class="col-12">
+                                    <div class="h4">State</div>
+                                    <div class="regions-list-wrapper">
+                                      <ul class="regions-list">
+                                        <li><a href="#">Alabama</a></li>
+                                        <li><a href="#">Alaska</a></li>
+                                        <li><a href="#">Arizona</a></li>
+                                        <li><a href="#">Arkansas</a></li>
+                                        <li><a href="#">California</a></li>
+                                        <li><a href="#">Colorado</a></li>
+                                        <li><a href="#">Connecticut</a></li>
+                                        <li><a href="#">Delaware</a></li>
+                                        <li><a href="#">Florida</a></li>
+                                        <li><a href="#">Georgia</a></li>
+                                        <li><a href="#">Hawaii</a></li>
+                                        <li><a href="#">Idaho</a></li>
+                                        <li><a href="#">Illinois</a></li>
+                                        <li><a href="#">Indiana</a></li>
+                                        <li><a href="#">Iowa</a></li>
+                                        <li><a href="#">Kansas</a></li>
+                                        <li><a href="#">Kentucky</a></li>
+                                        <li><a href="#">Louisiana</a></li>
+                                        <li><a href="#">Maine</a></li>
+                                        <li><a href="#">Maryland</a></li>
+                                        <li><a href="#">Massachusetts</a></li>
+                                        <li><a href="#">Michigan</a></li>
+                                        <li><a href="#">Minnesota</a></li>
+                                        <li><a href="#">Mississippi</a></li>
+                                        <li><a href="#">Missouri</a></li>
+                                        <li><a href="#">Montana</a></li>
+                                        <li><a href="#">Nebraska</a></li>
+                                        <li><a href="#">Nevada</a></li>
+                                        <li><a href="#">New Hampshire</a></li>
+                                        <li><a href="#">New Jersey</a></li>
+                                        <li><a href="#">New Mexico</a></li>
+                                        <li><a href="#">New York</a></li>
+                                        <li><a href="#">North Carolina</a></li>
+                                        <li><a href="#">North Dakota</a></li>
+                                        <li><a href="#">Ohio</a></li>
+                                        <li><a href="#">Oklahoma</a></li>
+                                        <li><a href="#">Oregon</a></li>
+                                        <li><a href="#">Pennsylvania</a></li>
+                                        <li><a href="#">Rhode Island</a></li>
+                                        <li><a href="#">South Carolina</a></li>
+                                        <li><a href="#">South Dakota</a></li>
+                                        <li><a href="#">Tennessee</a></li>
+                                        <li><a href="#">Texas</a></li>
+                                        <li><a href="#">Utah</a></li>
+                                        <li><a href="#">Vermont</a></li>
+                                        <li><a href="#">Virginia</a></li>
+                                        <li><a href="#">Washington</a></li>
+                                        <li><a href="#">West Virginia</a></li>
+                                        <li><a href="#">Wisconsin</a></li>
+                                        <li><a href="#">Wyoming</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-12">
+                                    <div class="h4">Region</div>
+                                    <div class="regions-list-wrapper"></div>
+                                    <ul class="regions-list">
+                                      <li><a href="#">Alabama</a></li>
+                                      <li><a href="#">Alaska</a></li>
+                                      <li><a href="#">Arizona</a></li>
+                                      <li><a href="#">Arkansas</a></li>
+                                      <li><a href="#">California</a></li>
+                                      <li><a href="#">Colorado</a></li>
+                                      <li><a href="#">Connecticut</a></li>
+                                      <li><a href="#">Delaware</a></li>
+                                      <li><a href="#">Florida</a></li>
+                                      <li><a href="#">Georgia</a></li>
+                                      <li><a href="#">Hawaii</a></li>
+                                      <li><a href="#">Idaho</a></li>
+                                      <li><a href="#">Illinois</a></li>
+                                      <li><a href="#">Indiana</a></li>
+                                      <li><a href="#">Iowa</a></li>
+                                      <li><a href="#">Kansas</a></li>
+                                      <li><a href="#">Kentucky</a></li>
+                                      <li><a href="#">Louisiana</a></li>
+                                      <li><a href="#">Maine</a></li>
+                                      <li><a href="#">Maryland</a></li>
+                                      <li><a href="#">Massachusetts</a></li>
+                                      <li><a href="#">Michigan</a></li>
+                                      <li><a href="#">Minnesota</a></li>
+                                      <li><a href="#">Mississippi</a></li>
+                                      <li><a href="#">Missouri</a></li>
+                                      <li><a href="#">Montana</a></li>
+                                      <li><a href="#">Nebraska</a></li>
+                                      <li><a href="#">Nevada</a></li>
+                                      <li><a href="#">New Hampshire</a></li>
+                                      <li><a href="#">New Jersey</a></li>
+                                      <li><a href="#">New Mexico</a></li>
+                                      <li><a href="#">New York</a></li>
+                                      <li><a href="#">North Carolina</a></li>
+                                      <li><a href="#">North Dakota</a></li>
+                                      <li><a href="#">Ohio</a></li>
+                                      <li><a href="#">Oklahoma</a></li>
+                                      <li><a href="#">Oregon</a></li>
+                                      <li><a href="#">Pennsylvania</a></li>
+                                      <li><a href="#">Rhode Island</a></li>
+                                      <li><a href="#">South Carolina</a></li>
+                                      <li><a href="#">South Dakota</a></li>
+                                      <li><a href="#">Tennessee</a></li>
+                                      <li><a href="#">Texas</a></li>
+                                      <li><a href="#">Utah</a></li>
+                                      <li><a href="#">Vermont</a></li>
+                                      <li><a href="#">Virginia</a></li>
+                                      <li><a href="#">Washington</a></li>
+                                      <li><a href="#">West Virginia</a></li>
+                                      <li><a href="#">Wisconsin</a></li>
+                                      <li><a href="#">Wyoming</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="header-phone"><a class="btn-header-phone" href="tel:877-613-5576"><span>877-613-5576</span></a></div>
+                    </div>
+                  </div>
+                  <div class="header-col-3">
+                    <div class="header-button"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#quoteModal">Request a quote now</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-bottom-mob d-block d-md-none">
+              <div class="row">
+                <div class="col-6"><a class="btn btn-2" href="tel:877-613-5576">Call</a></div>
+                <div class="col-6"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#quoteModal">Get a quote</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <div class="page-wrapper">
+          <div class="page-header" style="background-image: url(files/header-bg-faq.jpg);">
+            <div class="page-header-inner">
+              <div class="container">
+                <ul class="breadcrumb">
+                  <li><a href="#">Home</a></li>
+                  <li>FAQ</li>
+                </ul>
+                <h1>FAQ</h1>
+              </div>
+            </div>
+          </div>
+          <div class="page-body page-body-alt">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-8">
+                  <div class="page-content page-content-alt">
+                    <div class="faq-list">
+                      <div class="faq-item">
+                        <div class="faq-item-ttl">
+                          <div class="h3">Questions about Gentelmen’s moving company</div>
+                        </div>
+                        <div class="faq-item-content">
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">Why do I have to pay for 3 hours if my entire move takes less time?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">What do you need to schedule my move?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">Do I have to pay in advance?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">Will I have to pay if anything is broken or damaged during the move?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">How can I make my move faster and save money as well?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="btn-collapse"></div>
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-item-ttl">
+                          <div class="h3">Questions about moving</div>
+                        </div>
+                        <div class="faq-item-content">
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">Why do I have to pay for 3 hours if my entire move takes less time?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">What do you need to schedule my move?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">Do I have to pay in advance?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">Will I have to pay if anything is broken or damaged during the move?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">How can I make my move faster and save money as well?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="btn-collapse"></div>
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-item-ttl">
+                          <div class="h3">Questions about</div>
+                        </div>
+                        <div class="faq-item-content">
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">Why do I have to pay for 3 hours if my entire move takes less time?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">What do you need to schedule my move?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">Do I have to pay in advance?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">Will I have to pay if anything is broken or damaged during the move?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">How can I make my move faster and save money as well?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="btn-collapse"></div>
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-item-ttl">
+                          <div class="h3">Questions about Gentelmen’s moving company</div>
+                        </div>
+                        <div class="faq-item-content">
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">Why do I have to pay for 3 hours if my entire move takes less time?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">What do you need to schedule my move?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">Do I have to pay in advance?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">Will I have to pay if anything is broken or damaged during the move?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="faq-item faq-item-inner">
+                            <div class="faq-item-ttl">
+                              <div class="h3">How can I make my move faster and save money as well?</div>
+                            </div>
+                            <div class="faq-item-content">
+                              <p>Gentlemen's Moving Company has been in the moving business since 2009, and has always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <p>Gentlemen's Moving provides various size trucks with all necessary moving equipment required to complete any type of moving job. Whether it is a move of only a few pieces or an entire house relocation, packing up you kitchen or moving your business location we are at your service. Always used the latest technology in moving to ensure complete satisfaction to their consumers and provide the safest and most reliable service possible.</p>
+                              <div class="btn-collapse"></div>
+                            </div>
+                          </div>
+                          <div class="btn-collapse"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="page-sidebar">
+                    <div class="form-placeholder-mob d-block d-md-none">
+                      <div class="form-placeholder-mob-inner">
+                        <div class="h3">Request a&nbsp;Quote Now</div>
+                        <div class="btn btn-2 open-popup" data-popup="#formPopup"><span>Get started</span></div>
+                      </div>
+                    </div>
+                    <div class="popup popup-mob form-popup" id="formPopup">
+                      <div class="popup-dialog">
+                        <div class="popup-content">
+                          <div class="close"></div>
+                          <div class="top-form top-form-alt">
+                            <div class="h3">Request a&nbsp;Quote Now</div>
+                            <form>
+                              <div class="top-form-content">
+                                <div class="top-form-nav-wrapper">
+                                  <ul class="top-form-nav">
+                                    <li class="active">Step 1</li>
+                                    <li>Step 2</li>
+                                  </ul>
+                                </div>
+                                <div class="top-form-slider">
+                                  <div class="slide">
+                                    <div class="row">
+                                      <div class="col-12 col-md-6 col-lg-12">
+                                        <div class="form-group">
+                                          <label for="quote_from">From</label>
+                                          <input type="text" name="quote_from" id="quote_from" placeholder="City or zip code" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-6 col-lg-12">
+                                        <div class="form-group">
+                                          <label for="quote_to">To</label>
+                                          <input type="text" name="quote_to" id="quote_to" placeholder="City or zip code" required>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-12 col-md-6 col-lg-12">
+                                        <div class="form-group">
+                                          <label for="quote_size">Home size</label>
+                                          <select name="quote_size" id="quote_size" title="--" required>
+                                            <option value="1">Studio</option>
+                                            <option value="2">1 bedroom</option>
+                                            <option value="3">2 bedroom</option>
+                                            <option value="4">3 bedroom</option>
+                                            <option value="5">4 bedroom</option>
+                                            <option value="6">Commercial</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-6 col-lg-12">
+                                        <div class="form-group">
+                                          <label for="quote_date">Date</label>
+                                          <input class="input-date" type="text" name="quote_date" id="quote_date" placeholder="mm/dd/yy" required>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-footer">
+                                      <div class="btn btn-2 btn-fwd">Get Started</div>
+                                    </div>
+                                  </div>
+                                  <div class="slide">
+                                    <div class="row">
+                                      <div class="col-12 col-md-6 col-lg-12">
+                                        <div class="form-group">
+                                          <label for="quote_name">Name</label>
+                                          <input type="text" name="quote_name" id="quote_name" placeholder="your name" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-6 col-lg-12">
+                                        <div class="form-group">
+                                          <label for="quote_how">How did you hear about us</label>
+                                          <select name="quote_how" id="quote_how" title="Select" required>
+                                            <option value="1">friends said</option>
+                                            <option value="2">found on the internet</option>
+                                            <option value="3">saw an ad</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-12 col-md-6 col-lg-12">
+                                        <div class="form-group">
+                                          <label for="quote_phone">Phone number</label>
+                                          <input class="input-phone" type="text" name="quote_phone" id="quote_phone" placeholder="(000) 000-0000" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-6 col-lg-12">
+                                        <div class="form-group">
+                                          <label for="quote_email">E-mail</label>
+                                          <input type="email" name="quote_email" id="quote_email" placeholder="your mail" required>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-footer">
+                                      <button class="btn btn-2" type="submit">Get a Quote Now</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                            <div class="top-form-bottom">
+                              <div class="top-form-policy"><a href="#">Privacy Policy</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contacts-->
+          <div class="section section-contacts section-contacts-alt">
+            <div class="section-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-8 order-2 order-md-1">
+                    <div class="form-placeholder-mob d-block d-md-none">
+                      <div class="form-placeholder-mob-inner">
+                        <div class="h3">How can we help you?</div>
+                        <div class="btn btn-2 open-popup" data-popup="#helpPopup"><span>Send a question</span></div>
+                      </div>
+                    </div>
+                    <div class="popup popup-mob form-popup" id="helpPopup">
+                      <div class="popup-dialog">
+                        <div class="popup-content">
+                          <div class="close"></div>
+                          <div class="help-form">
+                            <div class="h3">How can we help you?</div>
+                            <form>
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="help_name">Name</label>
+                                    <input type="text" name="help_name" id="help_name" placeholder="your name" required>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 col-md-6 col-lg-5">
+                                  <div class="form-group">
+                                    <label for="help_phone">Phone number</label>
+                                    <input class="input-phone" type="text" name="help_phone" id="help_phone" placeholder="your phone number" required>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-7">
+                                  <div class="form-group">
+                                    <label for="help_email">E-mail</label>
+                                    <input type="email" name="help_email" id="help_email" placeholder="your email" required>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="help_message">Message</label>
+                                    <textarea class="textarea-autogrow" name="help_message" id="help_message" placeholder="your message" rows="1" required></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-footer">
+                                <div class="row">
+                                  <div class="col-12 col-md-5">
+                                    <button class="btn btn-2" type="submit">Submit</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 order-1 order-md-2">
+                    <div class="contacts-descr">
+                      <div class="h2">Contacts</div>
+                      <div class="contacts-item">
+                        <div class="contacts-item-pic"><img src="images/ico-contacts-phone.png"></div>
+                        <div class="contacts-item-descr">
+                          <div class="contacts-phone">
+                            <p><a href="tel:877-613-5576">877-613-5576</a></p>
+                          </div>
+                          <div class="contacts-sub-ttl">
+                            <p>Booking office</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="contacts-item">
+                        <div class="contacts-item-pic"><img src="images/ico-contacts-phone.png"></div>
+                        <div class="contacts-item-descr">
+                          <div class="contacts-phone">
+                            <p><a href="tel:877-613-5576">877-613-5576</a></p>
+                          </div>
+                          <div class="contacts-sub-ttl">
+                            <p>Alternative number</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="contacts-item">
+                        <div class="contacts-item-pic"><img src="images/ico-contacts-email.png"></div>
+                        <div class="contacts-item-descr">
+                          <div class="contacts-email">
+                            <p><a href="mailto:info@gentlemen.com">info@gentlemen.com</a></p>
+                          </div>
+                          <div class="contacts-sub-ttl">
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="contacts-item">
+                        <div class="contacts-item-pic"><img src="images/ico-contacts-time.png"></div>
+                        <div class="contacts-item-descr">
+                          <div class="contacts-sub-item">
+                            <div class="contacts-time">
+                              <p>8 AM - 10 PM</p>
+                            </div>
+                            <div class="contacts-sub-ttl">
+                              <p>Office hours</p>
+                            </div>
+                          </div>
+                          <div class="contacts-sub-item">
+                            <div class="contacts-time">
+                              <p>8 AM - 10 PM</p>
+                            </div>
+                            <div class="contacts-sub-ttl">
+                              <p>Customer support</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="soclinks-wrapper">
+                        <div class="soclinks-ttl">
+                          <p>Connect with us</p>
+                        </div>
+                        <div class="soclinks-content">
+                          <div class="soclinks"><a class="soclink soclink-fb" href="#"></a><a class="soclink soclink-instagram" href="#"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contacts END-->
+        </div>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                <div class="footer-logo"><img src="images/footer-logo.png"></div>
+                <div class="footer-text">
+                  <p>Our license number is<br>MTR0191103   US DOT 2399435</p>
+                </div>
+                <div class="footer-privacy"><a href="#">Privacy policy</a></div>
+              </div>
+              <div class="footer-col-2">
+                <div class="h3">Regions</div>
+                <ul class="footer-menu">
+                  <li><a href="#">California</a></li>
+                  <li><a href="#">Washington</a></li>
+                  <li><a href="#">Oregon</a></li>
+                </ul>
+              </div>
+              <div class="footer-col-3">
+                <div class="h3">Connect with us</div>
+                <div class="footer-soclinks"><a class="footer-soclink footer-soclink-fb" href="#"></a><a class="footer-soclink footer-soclink-instagram" href="#"></a></div>
+              </div>
+              <div class="footer-col-4">
+                <div class="h3">Share with us</div>
+                <div class="footer-share">
+                  <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                  <script src="https://yastatic.net/share2/share.js"></script>
+                  <div class="ya-share2" data-services="facebook,twitter"></div>
+                </div>
+              </div>
+              <div class="footer-col-5">
+                <div class="footer-copy">
+                  <p>Copyright &copy;<br>Gentlemen Moving Services INC.<br>GMS<sup class="reg">&reg;</sup></p>
+                </div>
+                <div class="footer-dev-wrapper"><a class="footer-dev" href="#" alt="Renaissance Art Group">Site development in <br><span>Renaissance Art Group</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade form-modal quote-modal" id="quoteModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <div class="h2">Request a Quote Now</div>
+            </div>
+            <div class="modal-body">
+              <div class="quote-form modal-form">
+                <form id="quoteModalForm">
+                  <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_from">From</label>
+                        <input type="text" name="quote_modal_from" id="quote_modal_from" placeholder="City or zip code" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_to">To</label>
+                        <input type="text" name="quote_modal_to" id="quote_modal_to" placeholder="City or zip code" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_size">Home size</label>
+                        <select name="quote_modal_size" id="quote_modal_size" title="--" required>
+                          <option value="1">Studio</option>
+                          <option value="2">1 bedroom</option>
+                          <option value="3">2 bedroom</option>
+                          <option value="4">3 bedroom</option>
+                          <option value="5">4 bedroom</option>
+                          <option value="6">Commercial</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_date">Date</label>
+                        <input class="input-date" type="text" name="quote_modal_date" id="quote_modal_date" placeholder="mm/dd/yy" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_name">Name</label>
+                        <input type="text" name="quote_modal_name" id="quote_modal_name" placeholder="your name" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_how">How did you hear about us</label>
+                        <select name="quote_modal_how" id="quote_modal_how" title="Select" required>
+                          <option value="1">friends said</option>
+                          <option value="2">found on the internet</option>
+                          <option value="3">saw an ad</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_phone">Phone number</label>
+                        <input class="input-phone" type="text" name="quote_modal_phone" id="quote_modal_phone" placeholder="(000) 000-0000" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <div class="form-group">
+                        <label for="quote_modal_email">E-mail</label>
+                        <input type="email" name="quote_modal_email" id="quote_modal_email" placeholder="your mail" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="quote_modal_message">Message</label>
+                        <textarea class="textarea-autogrow" name="quote_modal_message" id="quote_modal_message" rows="1" placeholder="your message"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <button class="btn btn-2" type="submit">Get started</button>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="top-form-policy"><a href="#">Privacy Policy</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal callback-modal" id="callbackModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <div class="h2">Заказать звонок</div>
+            </div>
+            <div class="modal-body">
+              <p>Оставьте свои данные и&nbsp;наш специалист свяжется с&nbsp;вами в&nbsp;течение 15&nbsp;минут</p>
+              <div class="modal-form callback-form">
+                <form>
+                  <div class="form-group">
+                    <label class="placeholder" for="callback_name">Ваше имя</label>
+                    <input type="text" name="callback_name" id="callback_name" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="placeholder" for="callback_phone">+7 (___) ___-__-__</label>
+                    <input class="input-phone" type="text" name="callback_phone" id="callback_phone" required>
+                  </div>
+                  <div class="form-footer">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <button class="btn btn-2 btn-small" type="submit"><span>Отправить</span></button>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку «Отправить», Вы даете свое согласие с&nbsp;<a href="#">политикой конфиденциальности</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade client-modal" id="clientModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal success-modal" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <div class="h2"><span>Ваша заявка успешно принята!</span></div>
+            </div>
+            <div class="modal-body">
+              <div class="text">
+                <p>Перезвоним в течение 15 минут</p>
+              </div>
+              <div class="success-modal-button">
+                <button class="btn btn-1" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/additional-methods.min.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/wNumb.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/fancybox/jquery.fancybox.min.js"></script>
+      <script src="js/greensock/TweenMax.min.js"></script>
+      <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+      <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+      <script src="js/iscroll-probe.js"></script>
+      <script src="js/scrollmagic/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+      <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+      <script src="js/jquery.mousewheel.js"></script>
+      <script src="js/animations.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>

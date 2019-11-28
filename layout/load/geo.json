@@ -1,0 +1,9 @@
+{
+  "items": [
+    { "state": "Alabama", "region": "Montgomery", "city": "Autaga"},
+    { "state": "Alabama", "region": "Montgomery", "city": "Elmore"},
+    { "state": "California", "region": "Orange", "city": "Santa Ana"},
+    { "state": "California", "region": "San Diego", "city": "Carlsbad"},
+    { "state": "Texas", "region": "Brooks", "city": "Falfurrias"}
+  ]
+}

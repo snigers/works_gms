@@ -146,48 +146,34 @@ $(document).ready(function () {
 
 	});
 
-	$("body").on("click", ".region-list-link", function (e) {
-		var city_id = $(this).data('city-id');
-		var city_url = $(this).data('city-href');
-		var city_name = $(this).text();
+	$("body").on("click", ".suggest-item", function (e) {
+		var city_url = $(this).data('url');
+		var city_name = $(this).data('name');
 
 		// Останавливаем переход по ссылке в случае если находимся на не изменяемой странице
-		if ($(this).attr("href") == "") {
+		if ($(this).find('a').attr("href") == "") {
 			e.preventDefault();
 		}
 
-		if(city_id) {
+		if(city_name) {
+			console.log(city_url);
 			$.ajax({
 				method: "POST",
 				url: '/ajax/set_geo.php',
-				data: 'set_city='+city_id+'&set_city_url='+city_url,
+				data: 'set_city='+city_name+'&set_city_url='+city_url,
 			})
 				.done(function(msg) {
 					if(msg=='Y'){
 						// В случае успешного выполнения запроса изменяем название локации на текущую
 						$(".city-name").html(city_name);
 						// Изменяем ссылку в логотипе на текущую локацию
-						$(".header-logo a").attr("href", "/"+city_url);
+						$(".header-logo>a").attr("href", city_url);
 
-						// Собираем ссылки из меню и изменяем для нужных страниц ссылки
-						var menulink = $('a.link_geolocal');
-						for (var i = 0; i < menulink.length; i++)
-						{
-							var link = menulink[i].pathname;
-							if (link.indexOf("services") > 0) {
-								menulink[i].href = "/" + city_url + "services/";
-							}
-							if (link.indexOf("rates") > 0) {
-								menulink[i].href = "/" + city_url + "rates/";
-							}
-							if (link.indexOf("contacts") > 0) {
-								menulink[i].href = "/" + city_url + "contacts/";
-							}
-						}
+						replace_url_menu(city_url);
 
 						// Меняем ссылки для хлебных крошек
 						var breadckrums_link = $('a.breadcrumb_link');
-							breadckrums_link[0].href = "/" + city_url;
+							breadckrums_link[0].href = city_url;
 
 						$(".location-popup").closest(".location-popup").fadeOut(250, function () {
 							$(".location-popup").closest(".location-popup").removeClass("active");
@@ -196,6 +182,32 @@ $(document).ready(function () {
 					}
 				});
 		}
-
 	});
+
+
 });
+
+$(window).load(function(){
+	// Собираем ссылки из меню и изменяем для нужных страниц ссылки
+	replace_url_menu(window.location.pathname);
+});
+
+
+
+function replace_url_menu(url)
+{
+	var menulink = $('a.link_geolocal');
+	for (var i = 0; i < menulink.length; i++)
+	{
+		// var link = menulink[i].pathname.indexOf("services");
+		if (menulink[i].pathname.indexOf("services") > 0) {
+			menulink[i].href = url + "services/";
+		}
+		if (menulink[i].pathname.indexOf("rates") > 0) {
+			menulink[i].href = url + "rates/";
+		}
+		if (menulink[i].pathname.indexOf("contacts") > 0) {
+			menulink[i].href = url + "contacts/";
+		}
+	}
+}

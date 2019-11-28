@@ -4,7 +4,7 @@
 <div class="header-col-1">
     <div class="row">
         <div class="header-logo">
-            <a href="<?=($_SESSION["GEO_DATA"]["NAME"] != "") ? "/" . $_SESSION["GEO_DATA"]["URL_SECTION"] : "/"?>">
+            <a href="<?=($_SESSION["GEO_DATA"]["NAME"] != "") ? $_SESSION["GEO_DATA"]["URL_SECTION"] : "/"?>">
                 <img src="<?=CFile::GetPath($arResult["PROPERTIES"]["LOGO_IMG"]["VALUE"])?>" alt="<?=$arResult["PROPERTIES"]["LOGO_ALT"]["VALUE"]?>">
             </a>
         </div>

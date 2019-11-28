@@ -171,6 +171,7 @@
       <script src="/layout/js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="/layout/js/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1-MV60BdEKMgEVbl59oSl8UIVbscZmx0&callback=initMap" type="text/javascript"></script>
+        <script src="/layout/js/geo_dev.js"></script>
       <script src="/layout/js/main.js"></script>
         <script src="/layout/js/dev-main.js"></script>
     </div>
