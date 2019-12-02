@@ -7,8 +7,6 @@ $geo_location = geoLocationURL($arResult["VARIABLES"]);
 //=================================================================
 $url = preg_replace("/f\/.+/", "" ,$_SERVER['REQUEST_URI']);
 $arFields = getSeoData($url);
-//$title = $APPLICATION->ShowTitle();
-//pr($url);
 //=================================================================
 ?>
       <div class="main">
@@ -25,7 +23,7 @@ $arFields = getSeoData($url);
 						  "START_FROM" => "0"
 					  )
 				  );?>
-                  <div class="h1">Contacts</div>
+                  <div class="h1"><?=($arFields["PROPERTIES"]["H1"]["VALUE"] != "") ? $arFields["PROPERTIES"]["H1"]["VALUE"] : "Contacts"?></div>
               </div>
             </div>
           </div>

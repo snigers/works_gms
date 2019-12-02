@@ -26,7 +26,7 @@ $arFields = getSeoData($url);
 							"START_FROM" => "0"
 						)
 					);?>
-                    <h1>Services</h1>
+                    <h1><?=($arFields["PROPERTIES"]["H1"]["VALUE"] != "") ? $arFields["PROPERTIES"]["H1"]["VALUE"] : "Services"?></h1>
 				</div>
 			</div>
 		</div>

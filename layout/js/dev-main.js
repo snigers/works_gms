@@ -187,10 +187,10 @@ $(document).ready(function () {
 
 });
 
-$(window).load(function(){
-	// Собираем ссылки из меню и изменяем для нужных страниц ссылки
-	replace_url_menu(window.location.pathname);
-});
+// $(window).load(function(){
+// 	// Собираем ссылки из меню и изменяем для нужных страниц ссылки
+// 	replace_url_menu(window.location.pathname);
+// });
 
 
 

@@ -14,7 +14,7 @@ $arFields = getSeoData($url);
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-7">
                     <div class="page-header-descr">
-                        <div class="h1"><?=$arResult["NAME"]?></div>
+                        <div class="h1"><?=($arFields["PROPERTIES"]["H1"]["VALUE"] != "") ? $arFields["PROPERTIES"]["H1"]["VALUE"] : $arResult["NAME"]?></div>
                         <div class="page-header-text">
                             <p><?=$arResult["PROPERTIES"]["SUBTITLE"]["VALUE"]?></p>
                             <div class="btn-video-top-wrapper">

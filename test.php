@@ -2,82 +2,35 @@
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Главная");
 
-$name = "ca";
-$rsSect = CIBlockSection::GetList(array(),array('IBLOCK_ID' => GEO_LOC_ID, "NAME" => "%".$name."%"), false, array("ID", "IBLOCK_SECTION_ID", "CODE", "NAME", "UF_GEO_EMAIL"));
-$result = array();
-while ($arSect = $rsSect->GetNext())
-{
-	
-	if ($arSect["IBLOCK_SECTION_ID"] != "")
-	{
-		
-		$rsSections = CIBlockSection::GetList(array(),array('IBLOCK_ID' => GEO_LOC_ID, "ID" => $arSect["IBLOCK_SECTION_ID"]), false, array("ID", "IBLOCK_SECTION_ID", "CODE", "NAME", "UF_GEO_EMAIL"));
-		if ($arSection = $rsSections->Fetch())
-		{
-			if ($arSection["IBLOCK_SECTION_ID"] != "")
-			{
-				$rsSectionsState = CIBlockSection::GetList(array(),array('IBLOCK_ID' => GEO_LOC_ID, "ID" => $arSection["IBLOCK_SECTION_ID"]), false, array("ID", "IBLOCK_SECTION_ID", "CODE", "NAME", "UF_GEO_EMAIL"));
-				if ($rsSectionsState = $rsSectionsState->Fetch())
-				{
-					$arSect["STATE"]["ID"] = $rsSectionsState["ID"];
-					$arSect["STATE"]["NAME"] = $rsSectionsState["NAME"];
-					$arSect["STATE"]["CODE"] = $rsSectionsState["CODE"];
+ use \Bitrix\Main\Service\GeoIp;
+ use \Bitrix\Main\Service\GeoIp\Manager;
 
-					$arSect["REGION"]["ID"] = $arSection["ID"];
-					$arSect["REGION"]["NAME"] = $arSection["NAME"];
-					$arSect["REGION"]["CODE"] = $arSection["CODE"];
-				}
-			} else {
+//phpinfo();
 
-				$arSect["STATE"]["ID"] = $arSection["ID"];
-				$arSect["STATE"]["NAME"] = $arSection["NAME"];
-				$arSect["STATE"]["CODE"] = $arSection["CODE"];
-			}
-		}
-	}
-	
-	$result[] = $arSect;
+
+//$geoResult = GeoIp\Manager::getDataResult("92.50.195.50", "en");
+$geoResult = GeoIp\Manager::getDataResult("209.59.129.220", "ru");
+ pr($geoResult);
+
+//if($geoResult)
+//{
+//	if($geoResult->isSuccess())
+//		pr($geoResult->getGeoData());
+//	elseif(!$geoResult->isSuccess())
+//		echo "Ошибка: ".implode("\n", $geoResult->getErrorMessages());
+//}
+//else
+//{
+//	echo 'Нет данных для данного IP - адреса';
+//}
+
+// $result = GeoIp\Manager::getDataResult('209.59.129.220', "en");
+
+use Bitrix\Main\Loader;
+if (Loader::includeModule('intervolga.enrich')) {
+	$result = \Intervolga\Enrich\ProviderProxy::getIpInfo('88.87.88.238');
+	var_dump($result);
 }
-
-
-$geo_result = array();
-foreach ($result as $arItem)
-{
-	$item = array();
-	if ($arItem["IBLOCK_SECTION_ID"] == "")
-	{
-		$item["state"] = $arItem["NAME"];
-		$item["url"] = "/" . $arItem["CODE"] . "/";
-		
-	} else {
-		if (!empty($arItem["STATE"]))
-		{
-			$item["state"] = $arItem["STATE"]["NAME"];
-			$item["url"] = "/" . $arItem["STATE"]["CODE"] . "/";
-		}
-		if (!empty($arItem["REGION"]))
-		{
-			$item["region"] = $arItem["REGION"]["NAME"];
-			$item["city"] = $arItem["NAME"];
-			$item["url"] .= $arItem["REGION"]["CODE"] . "/" . $arItem["CODE"] . "/";
-			
-		} else {
-			$item["region"] = $arItem["NAME"];
-			$item["url"] = "/" . $arItem["STATE"]["CODE"] . "/" . $arItem["CODE"] . "/";
-		}
-		
-	}
-	$geo_result[] = $item;
-}
-
-$geo_result = '{"items": ' . json_encode($geo_result) . '}';
-
-$file = fopen('layout/load/data.json','w+');
-fwrite($file, $geo_result);
-fclose($file);
-
-pr($geo_result);
-
 
 ?>
 

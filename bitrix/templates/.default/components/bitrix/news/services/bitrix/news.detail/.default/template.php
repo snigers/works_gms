@@ -1,7 +1,9 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-
 <div class="main">
     <div class="page-wrapper">
+		<?
+		pr("ttetetetetete");
+		?>
     <!-- Шапка страницы-->
         <div class="page-header page-header-alt" style="background-image: url(<?=CFile::GetPath($arResult["PROPERTIES"]["PICTURE_BACKGROUND"]["VALUE"])?>)">
             <div class="page-header-inner">

@@ -34,9 +34,9 @@ $arFields = getSeoData($url);
 										"START_FROM" => "0"
 									)
 								);?>
-                                <div class="h1">Rates</div>
+                                <div class="h1"><?=($arFields["PROPERTIES"]["H1"]["VALUE"] != "") ? $arFields["PROPERTIES"]["H1"]["VALUE"] : "Rates"?></div>
 								<div class="page-header-text">
-									<p>Take advantage of our great prices!</p>
+									<p><?=($arFields["PROPERTIES"]["SUBTITLE_FOR_RATES"]["VALUE"] != "") ? $arFields["PROPERTIES"]["SUBTITLE_FOR_RATES"]["VALUE"] : "Take advantage of our great prices!"?></p>
 								</div>
 							</div>
 						</div>

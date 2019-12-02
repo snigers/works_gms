@@ -6,7 +6,11 @@ $APPLICATION->SetTitle("Gentlemen's Moving Company");
 global $GEOLOC_BASE_ELEMENT;
 
 $sectionIdState = getLocationID($arResult["VARIABLES"]["REGION_CODE"]);
-?> 
+$str = getGeoData();
+//$str = "xgdfg";
+//pr($str);
+//pr($_SESSION);
+?>
 
       <div class="main">
         <div class="page-wrapper">

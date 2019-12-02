@@ -6,11 +6,10 @@ $arFields = getSeoData($url);
 //=================================================================
 
 ?>
-
 <div class="main">
     <div class="page-wrapper">
     <!-- Шапка страницы-->
-        <div class="page-header page-header-alt" style="background-image: url(<?=($arFields["PREVIEW_PICTURE"] != "") ? $arFields["PREVIEW_PICTURE"] : "/layout/files/header-bg-rates.jpg"?>)">
+        <div class="page-header page-header-alt" style="background-image: url(<?=($arFields["PREVIEW_PICTURE"] != "") ? $arFields["PREVIEW_PICTURE"] : CFile::GetPath($arResult["PROPERTIES"]["PICTURE_BACKGROUND"]["VALUE"])?>)">
             <div class="page-header-inner">
                 <div class="container">
                     <div class="row">
@@ -25,7 +24,7 @@ $arFields = getSeoData($url);
 										"START_FROM" => "0"
 									)
 								);?>
-                                <div class="h1"><?=$arResult["NAME"]?></div>
+                                <div class="h1"><?=($arFields["PROPERTIES"]["H1"]["VALUE"] != "") ? $arFields["PROPERTIES"]["H1"]["VALUE"] : $arResult["NAME"]?></div>
                                 <div class="page-header-text">
                                     <?=$arResult["PROPERTIES"]["SUBTITLE"]["~VALUE"]["TEXT"]?>
                                 </div>
@@ -71,7 +70,7 @@ $arFields = getSeoData($url);
                     <ul class="page-menu">
                         <li>
                             <a href="#why">
-								<?=($arResult["PROPERTIES"]["TITLE_WHY_CHOOSE_US"]["VALUE"] != "") ? $arResult["PROPERTIES"]["TITLE_WHY_CHOOSE_US"]["VALUE"] : "Why You Should Choose Us?"?>
+								<?=($arResult["PROPERTIES"]["SUBTITLE_WHY_CHOOSE_US"]["VALUE"] != "") ? $arResult["PROPERTIES"]["SUBTITLE_WHY_CHOOSE_US"]["VALUE"] : "Why You Should Choose Us?"?>
                             </a>
                         </li>
                         <li>
